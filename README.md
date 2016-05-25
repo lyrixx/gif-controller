@@ -1,4 +1,4 @@
-Git Controller
+Gif Controller
 ==============
 
 > What can be better that a static frame ? A FUCKING GIF ANIMATED FRAME. You can
