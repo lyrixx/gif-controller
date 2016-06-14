@@ -45,19 +45,24 @@
             margin-bottom: 20px;
         }
         img {
-            width: 300px;
+            width: 275px;
         }
         h1 {
             text-transform: uppercase;
             text-align: center;
             color: #ef4d40;
             text-shadow: 2px 3px rgba(0,0,0,0.3);
+            font-size: 4em;
+        }
+        .quote {
+            color: #666666;
         }
         label {
             text-transform: uppercase;
         }
         input[type="search"] {
             border: 1px solid #2ad892;
+            text-align: center;
         }
         input[type="search"]:focus {
             border: 1px solid #2ad892;
@@ -79,18 +84,15 @@
             <header>
                 <h1 class="axis">gif-o-matic</h1>
 
-                <div>
-                    <p>
-                        le premier qui prononce guif, il se prend une tarte
-                        <br />
-                        &mdash; Gandhi
-                    </p>
-                </div>
+                <p class="quote">
+                    le premier qui prononce guif, il se prend une tarte
+                    <br />
+                    &mdash; Gandhi
+                </p>
             </header>
 
             <form id="form-what" class="flex-containe axis">
                 <div class="form-group">
-                    <label for="what">Rentrez ici une thématique</label>
                     <input type="search" class="form-control" id="what" placeholder="cat" required="required">
                 </div>
                 <div style="text-align:center;">
