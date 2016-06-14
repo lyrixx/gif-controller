@@ -9,9 +9,5 @@ $(function () {
             gif: $what.val(),
         });
         $('.thematic').html($what.val());
-        $('.message').show();
-        setInterval(function() {
-            $('.message').hide();
-        }, 3000);
     });
 });

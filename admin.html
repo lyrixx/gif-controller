@@ -1,35 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gif Controller</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <div class="container">
-            <h1>What do you want?</h1>
-            <div class="alert alert-warning alert-dismissible message" role="alert" style="display: none">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                The new thematic is: <strong class="thematic"></strong>
-            </div>
-            <form id="form-what">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gif Controller</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            border: 15px solid #2ad892;
+            padding-top: 50px;
+        }
+        header {
+            margin-bottom: 50px;
+        }
+        @font-face {
+            font-family: 'axis';
+            src: url('fonts/axis.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .axis {
+            font-family: axis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .frame {
+            box-shadow:
+                0px 0px 0px 2px rgba(0,0,0,0.9),
+                0px 0px 0px 12px #fff,
+                0px 0px 0px 22px rgba(0,0,0,0.9),
+                7px 6px 8px 18px #555
+            ;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 300px;
+        }
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            color: #ef4d40;
+            text-shadow: 2px 3px rgba(0,0,0,0.3);
+        }
+        label {
+            text-transform: uppercase;
+        }
+        input[type="search"] {
+            border: 1px solid #2ad892;
+        }
+        input[type="search"]:focus {
+            border: 1px solid #2ad892;
+            border: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(42, 216, 146, .6)
+        }
+        button[type="submit"] {
+            background-color: #2ad892;
+            border: 1px solid #2ad892;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="frame">
+            <img src="images/cat.gif">
+        </div>
+        <div>
+            <header>
+                <h1 class="axis">gif-o-matic</h1>
+
+                <div>
+                    <p>
+                        le premier qui prononce guif, il se prend une tarte
+                        <br />
+                        &mdash; Gandhi
+                    </p>
+                </div>
+            </header>
+
+            <form id="form-what" class="flex-containe axis">
                 <div class="form-group">
-                    <label for="what">What?</label>
+                    <label for="what">Rentrez ici une thématique</label>
                     <input type="search" class="form-control" id="what" placeholder="cat" required="required">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div style="text-align:center;">
+                    <button type="submit" class="btn btn-primary">C'est Parti !</button>
+                </div>
             </form>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-        <script src="./config.js"></script>
-        <script src="./admin.js"></script>
-    </body>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="./config.js"></script>
+    <script src="./admin.js"></script>
+</body>
 </html>
