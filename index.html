@@ -72,6 +72,10 @@
             background-color: #2ad892;
             border: 1px solid #2ad892;
         }
+        .saved {
+            display: none;
+            color: #FFF;
+        }
     </style>
 </head>
 
@@ -96,7 +100,10 @@
                     <input type="search" class="form-control" id="what" placeholder="cat" required="required">
                 </div>
                 <div style="text-align:center;">
-                    <button type="submit" class="btn btn-primary">C'est Parti !</button>
+                    <button type="submit" class="btn btn-primary">
+                        C'est Parti !
+                        <span class="glyphicon glyphicon-ok saved" aria-hidden="true"></span>
+                    </button>
                 </div>
             </form>
         </div>

@@ -14,5 +14,9 @@ $(function () {
         firebase.database().ref(room).set({
             gif: $what.val(),
         });
+        $('.saved').show();
+        setInterval(function() {
+            $('.saved').hide();
+        }, 1500);
     });
 });
