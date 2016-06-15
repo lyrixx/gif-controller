@@ -11,6 +11,12 @@ Demo
 * [player](http://gifomatic.science/player.html)
 * [admin](http://gifomatic.science/)
 
+Room
+----
+
+There is a simple "room" concept, to be able to share some GIF with privacy.
+Simply add `?room=XXXX` at the end of the URL to have a dedicated room.
+
 Installation
 ------------
 
