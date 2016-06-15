@@ -8,8 +8,8 @@ Gif Controller
 Demo
 ----
 
-* [player](http://lyrixx.github.io/gif-controller/)
-* [admin](http://lyrixx.github.io/gif-controller/admin.html)
+* [player](http://gifomatic.science/gif-controller/)
+* [admin](http://gifomatic.science/gif-controller/admin.html)
 
 Installation
 ------------
