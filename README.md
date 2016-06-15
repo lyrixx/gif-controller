@@ -8,8 +8,8 @@ Gif Controller
 Demo
 ----
 
-* [player](http://gifomatic.science/)
-* [admin](http://gifomatic.science/admin.html)
+* [player](http://gifomatic.science/player.html)
+* [admin](http://gifomatic.science/)
 
 Installation
 ------------
